@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <title>3 Column Layout</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+    <header class="header">
+	<img class="logo" src="./assets/img/logo.png">
+	</header>
+
+
+<div class="container">
+    <main class="center column">
+        <canvas id="draw" width="490" height="220" ></canvas>
+        <h1>Canvas</h1>
+        <input id="clear" class="btn" type="button" value="Clear" />
+        <p>Color <input  id="color" type="color" name="bg" value="#C4C4C4" >
+        <p>Brush size: <input type="range" id="r1" min="5" max="50" step="1" value="5" oninput="choosewidth()"></p>
+    </main>
+    <nav class="left column">
+        <h3>Left heading</h3>
+        <ul>
+            <li><a href="#">Home </a></li>
+        </ul>
+        <h3>Left heading</h3>
+        <ul> 
+			<li><a href="#">Contact</a></li>
+            <li><a href="#">Media</a></li>
+            <li><a href="#">Slider</a></li>
+            <li><a href="#">Table</a></li>   
+        </ul>
+    </nav>
+    <div class="right column">
+        <h3>Right heading</h3>
+        <li><a class="home" href="#">About</a></li>
+    </div>
+</div>
+<div class="footer-wrapper">
+    <footer class="footer">
+    </footer>
+</div>
+<script type="text/javascript" src="assets/js/paint.js"></script>
+
+</body>
+</html>
+
+
